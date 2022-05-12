@@ -4,79 +4,381 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <title>Everflow - Création de sites internet</title>
+    <meta name="description" content="Développeur web spécialisé dans la création (et des fois conception) d’expériences digitales exceptionnelles.">
+    <title>Jiasuo</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./res/css/reset.css" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="./res/css/style.css" />
   </head>
   <body>
-    <!-- #region Header -->
-    <header>
+    <!-- Navbar -->
+    <header class="topbar">
       <div class="logo">
-        <a href="#"><img src="./src/img/logo.png" alt="Everflow Logo" /></a>
+        <a href="#"
+          ><img src="./res/img/logo.svg" alt="J" width="40px" height="40px"
+        /></a>
       </div>
-      <h1>Design & Creation de sites internet</h1>
-    </header>
-    <!-- #endregion -->
-
-    <!-- #region Navbar -->
-    <nav>
-      <!-- Nav list -->
-      <ul>
-        <li><a href="#">a propos</a></li>
-        <li><a href="#" class="active">realisations</a></li>
-        <li><a href="#">articles</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-    </nav>
-    <!-- #endregion -->
-
-    <!-- #region Content Area -->
-    <main class="clearfix">
-      <!-- VPP Row -->
-      <div class="content clearfix">
-        <a href="#">
-          <div class="preview">
-            <img src="./src/img/vpp.png" alt="My work" />
-          </div>
-          <div class="legend">
-            <h2 class="work-title">VPP - Vélos électriques</h2>
-            <p>Logotype</p>
-            <p>Maquette site web</p>
-            <p>Cartes de Visite</p>
-          </div>
-        </a>
-      </div>
-      <!-- Bonapp Row -->
-      <div class="content clearfix">
-        <a href="#">
-          <div class="preview">
-            <img src="./src/img/bonapp.png" alt="My work" />
-          </div>
-          <div class="legend">
-            <h2 class="work-title">Identité visuelle Application Mobile</h2>
-            <p>Logotype</p>
-            <p>Maquette Application mobile</p>
-            <p>Cartes de Visite</p>
-          </div>
-        </a>
-      </div>
-    </main>
-    <!-- #endregion -->
-
-    <!-- #region Footer Area -->
-    <footer class="clearfix">
-      <ul class="footer-nav">
-        <li><a href="#">a propos</a></li>
-        <li><a href="#" class="active">realisations</a></li>
-        <li><a href="#">articles</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-      <div class="footer-signature">
-        <div class="copyright">Tous droits réservés 2022©</div>
-        <div class="signature">
-          Site créé avec <span id="heart">❤</span> par moi-même
+      <nav>
+        <ul class="navbar">
+          <li class="navitem">
+            <a href="#about"><span class="navindicator">01.</span>&nbsp;À propos</a>
+          </li>
+          <li class="navitem">
+            <a href="#skills"
+              ><span class="navindicator">02.</span>&nbsp;Compétences</a
+            >
+          </li>
+          <li class="navitem">
+            <a href="#portfolio"
+              ><span class="navindicator">03.</span>&nbsp;Réalisations</a
+            >
+          </li>
+          <li class="navitem"><a href="#contact" class="button">Contact</a></li>
+        </ul>
+        <div class="overlay" id="overlay">
+          <aside class="navbar">
+            <ul>
+              <li><a href="#about" id="menulink1">À Propos</a></li>
+              <li><a href="#skills" id="menulink2">Compétences</a></li>
+              <li><a href="#portfolio" id="menulink3">Réalisations</a></li>
+              <li><a href="#contact" id="menulink4">Contact</a></li>
+            </ul>
+          </aside>
         </div>
+        <div class="menu" id="menucontainer">
+          <img src="./res/img/menu-i40.svg" alt="menu" id="menu">
+        </div>
+      </nav>
+    </header>
+
+    <!-- Left side navigation -->
+    <aside class="left">
+      <a href="https://github.com/jiasuo" target="_blank" class="sm"
+        ><span class="icon"
+          ><img src="./res/img/github-i20.svg" alt="github" /></span></a
+      ><a href="https://fb.me/gabx91" target="_blank" class="sm"
+        ><span class="icon"
+          ><img src="./res/img/fb-i20.svg" alt="facebook" /></span></a
+      ><a href="https://www.linkedin.com/in/acsjiasuo" target="_blank" class="sm"
+        ><span class="icon"
+          ><img src="./res/img/in-i20.svg" alt="linkedin" /></span
+      ></a>
+    </aside>
+
+    <!-- Right side navigation -->
+    <aside class="right">
+      <a href="mailto:coucou@jiasuo.fr">coucou@jiasuo.fr</a>
+    </aside>
+
+    <!-- Main content -->
+    <main class="maincontent">
+      <!-- Landing -->
+      <section class="hero">
+        <!-- intro text -->
+        <p class="intro">Coucou, je m'appelle</p>
+        <!-- Big title -->
+        <h1 class="bigtitle">Jiasuo.</h1>
+        <!-- Big subtitle -->
+        <h2 class="bigsubtitle">Je code des trucs sur internet.</h2>
+        <!-- Hero description -->
+        <p class="desc">
+          Je suis développeur web spécialisé dans la création (et des fois
+conception) d’expériences digitales exceptionnelles. Actuellement, je suis 
+en-train de créer une agence Web.
+        </p>
+        <!-- CTA -->
+        <a href="#contact" class="button">Besoin de moi ?</a>
+      </section>
+      <!-- About -->
+      <section class="about" id="about">
+        <!-- Heading -->
+        <div class="heading">
+          <h2 class="title">À propos</h2>
+        </div>
+        <!-- Content -->
+        <div class="content">
+          <!-- Left -->
+          <div class="left">
+            <p>
+              Hello! Je m’appelle Jiasuo et j’adore créer toute sorte de choses
+              sur internet. Mon intérêt dans le développement web a débuté en
+              2017 lorsque j’ai décidé d’apprendre à coder pour créer des trucs
+              cools. J’ai fait mes premiers pas avec Python.
+            </p>
+            <p>
+              Aujourd’hui, j’ai eu le privilège de travailler dans une agence de
+              com’, une start-up, une grande entreprise, et un studio de design
+              amateur. Ma priorité actuelle est d’aider les start-ups et les
+              PMEs à transmettre leurs valeurs de marque à travers des produits
+              et services digitaux.
+            </p>
+            <p id="skills">
+              Je suis également en-train de créer un tutoriel vidéo qui explique
+              tout ce qu’il y a à savoir pour créer une application web de
+              numérisation de formulaire papier.
+            </p>
+            <p>
+              Voici quelques technologies avec lesquelles j’ai travaillé
+              récemment :
+            </p>
+            <ul class="skilllist">
+              <li class="skill">JavaScript (ES6+)</li>
+              <li class="skill">Vue.js</li>
+              <li class="skill">Node.js</li>
+              <li class="skill">TypeScript</li>
+              <li class="skill">Python</li>
+              <li class="skill">Linux</li>
+            </ul>
+          </div>
+          <!-- Right -->
+          <div class="right">
+            <div class="imagewrapper">
+            <div class="pic">
+              <img src="./res/img/jj.png" alt="jiasuo picture" />
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section class="portfolio" id="portfolio">
+        <!-- Heading -->
+        <div class="heading">
+          <h2 class="title">Réalisations</h2>
+        </div>
+        <!-- Content -->
+        <div class="content">
+          <!-- Project 1 -->
+          <div class="project">
+            <!-- Content -->
+            <div class="projectcontent">
+              <p class="projectoverline">Site internet</p>
+              <h3 class="projecttitle">
+                <a href="javascript:;">Restaurant Pierre Orsi</a>
+              </h3>
+              <div class="projectdesc">
+                <p>
+                  Ce meilleur ouvrier de France avait besoin, pour son restaurant gastronomique à fort renommée,  d'une refonte de l'identité visuelle et création de la landing page.
+                </p>
+              </div>
+              <div class="projectlabels">
+                <span class="projectlabel">Photoshop</span
+                ><span class="projectlabel">XD</span
+                ><span class="projectlabel">HTML/CSS</span
+                ><span class="projectlabel">JavaScript</span>
+              </div>
+              <div class="projectlinks">
+                <a href="javascript:;"
+                  ><img src="./res/img/github-i20.svg" alt="link"
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./res/img/external-i20.svg" alt="link"
+                /></a>
+              </div>
+            </div>
+            <!-- Image -->
+            <div class="projectimage">
+              <a href="javascript:;" class="projectlink">
+                <div class="imagecontainer">
+                  <img
+                    src="./res/img/site-pierreorsi.png"
+                    alt="Aperçu projet Pierre Orsi"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project">
+            <!-- Content -->
+            <div class="projectcontent">
+              <p class="projectoverline">Site internet</p>
+              <h3 class="projecttitle">
+                <a href="javascript:;">Label de musique Fred & Mahmoud</a>
+              </h3>
+              <div class="projectdesc">
+                <p>
+                  Le label indépendant Fred & Mahmoud avait besoin, pour leur premier site internet, d'une identité visuelle et d'un accompagnement technique.
+                </p>
+              </div>
+              <div class="projectlabels">
+                <span class="projectlabel">Illustrator</span
+                ><span class="projectlabel">After Effects</span
+                ><span class="projectlabel">XD</span
+                ><span class="projectlabel">HTML/CSS</span
+                ><span class="projectlabel">JavaScript</span>
+              </div>
+              <div class="projectlinks">
+                <a href="javascript:;"
+                  ><img src="./res/img/github-i20.svg" alt="link"
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./res/img/external-i20.svg" alt="link"
+                /></a>
+              </div>
+            </div>
+            <!-- Image -->
+            <div class="projectimage">
+              <a href="javascript:;" class="projectlink">
+                <div class="imagecontainer">
+                  <img
+                    src="./res/img/site-labelfm.png"
+                    alt="Aperçu projet Pierre Orsi"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project">
+            <!-- Content -->
+            <div class="projectcontent">
+              <p class="projectoverline">Site internet</p>
+              <h3 class="projecttitle">
+                <a href="javascript:;">Agence Web Slika</a>
+              </h3>
+              <div class="projectdesc">
+                <p>
+                  Les créateurs de cette nouvelle agence de web design souhaitaient affirmer la qualité de leurs créations, leur fiabilité mais aussi leur aspect innovant pour leur site internet.
+                </p>
+              </div>
+              <div class="projectlabels">
+                <span class="projectlabel">Illustrator</span
+                ><span class="projectlabel">XD</span
+                ><span class="projectlabel">HTML/CSS</span
+                ><span class="projectlabel">JavaScript</span>
+              </div>
+              <div class="projectlinks">
+                <a href="javascript:;"
+                  ><img src="./res/img/github-i20.svg" alt="link"
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./res/img/external-i20.svg" alt="link"
+                /></a>
+              </div>
+            </div>
+            <!-- Image -->
+            <div class="projectimage">
+              <a href="javascript:;" class="projectlink">
+                <div class="imagecontainer">
+                  <img
+                    src="./res/img/site-slika.png"
+                    alt="Aperçu projet Pierre Orsi"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Other projects -->
+      <section class="otherprojects" id="other">
+        <div class="title">
+          <h2>Autres Projets Notables</h2>
+          <p>liste des projets</p>
+        </div>
+        <div class="projectlist">
+          <!-- Project 1 -->
+          <div class="project">
+            <div class="projecttop">
+              <div class="projecticon">
+                <img src="./res/img/folder-i40.svg" alt="Project icon" />
+              </div>
+              <div class="projectlinks">
+                <a href="javascript:;"
+                  ><img src="./res/img/github-i20.svg" alt="link"
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./res/img/external-i20.svg" alt="link"
+                /></a>
+              </div>
+            </div>
+            <h3 class="projecttitle">Questionnaire médical numérique</h3>
+            <p class="projectdescription">
+              Le cabinet de chirurgie dentaire avait besoin d'un outil numérique pour remplir les questionnaires médicaux afin de mieux respecter les gestes barrières.
+            </p>
+            <div class="projectlabels">
+              <span class="projectlabel">Vue.js</span
+              ><span class="projectlabel">Flutter</span
+              ><span class="projectlabel">Node.js</span>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project">
+            <div class="projecttop">
+              <div class="projecticon">
+                <img src="./res/img/folder-i40.svg" alt="Project icon" />
+              </div>
+              <div class="projectlinks">
+                <a href="javascript:;"
+                  ><img src="./res/img/github-i20.svg" alt="link"
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./res/img/external-i20.svg" alt="link"
+                /></a>
+              </div>
+            </div>
+            <h3 class="projecttitle">Pilotage de logiciel par commande vocale</h3>
+            <p class="projectdescription">
+              Le cabinet de chirurgie dentaire avait besoin d'un outil de reconnaissance vocal pour gagner en productivité au fauteuil.
+            </p>
+            <div class="projectlabels">
+              <span class="projectlabel">Python</span
+              ><span class="projectlabel">Linux</span>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project">
+            <div class="projecttop">
+              <div class="projecticon">
+                <img src="./res/img/folder-i40.svg" alt="Project icon" />
+              </div>
+              <div class="projectlinks">
+                <a href="javascript:;"
+                  ><img src="./res/img/github-i20.svg" alt="link"
+                /></a>
+                <a href="javascript:;"
+                  ><img src="./res/img/external-i20.svg" alt="link"
+                /></a>
+              </div>
+            </div>
+            <h3 class="projecttitle">Générateur d'attestation de déplacement</h3>
+            <p class="projectdescription">
+              Une attestation de déplacement dérogatoire générée en un clic pour obtenir un QR code valide en cas de contrôle.
+            </p>
+            <div class="projectlabels">
+              <span class="projectlabel">Django</span
+              ><span class="projectlabel">HTML/CSS</span
+              ><span class="projectlabel">Javascript</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <p class="outline">Et ensuite ?</p>
+        <h2 class="title">Discutons !</h2>
+        <p class="desc">Même si je ne suis pas en recherche d'opportunités, ma boîte mail t'est toujours ouverte. Que t'aies une question ou juste pour un coucou, j'essaierai de mon mieux pour te répondre.</p>
+        <a href="mailto:coucou@jiasuo.fr" class="button">Faire coucou</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bottom">
+      <div class="socialmedias">
+        <ul class="socialmediaslist">
+          <li class="socialmedia"><a href="https://github.com/jiasuo" target="_blank"><img src="./res/img/github-i20.svg" alt=""></a></li>
+          <li class="socialmedia"><a href="https://fb.me/acsjiasuo" target="_blank"><img src="./res/img/fb-i20.svg" alt=""></a></li>
+          <li class="socialmedia"><a href="https://linkedin.com/in/acsjiasuo" target="_blank"><img src="./res/img/in-i20.svg" alt=""></a></li>
+          <li class="socialmedia"><a href="mailto:coucou@jiasuo.fr"><img src="./res/img/mail-i20.svg" alt=""></a></li>
+        </ul>
       </div>
+      <p class="text">Site construit par Jiasuo</p>
     </footer>
-    <!-- #endregion -->
+
+    <!-- SCRIPT -->
+    <script src="./res/js/index.js"></script>
   </body>
 </html>
